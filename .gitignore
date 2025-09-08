@@ -1,1 +1,23 @@
-*.ipynb_checkpoints/
+# macOS & editors
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SageMaker Local artifacts (large)
+outputs/
+sagemaker-local/
+*.tar.gz
+*.joblib
+
+# Secrets (never commit!)
+.env
