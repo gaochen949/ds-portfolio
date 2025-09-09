@@ -1,23 +1,52 @@
-# macOS & editors
+# OS-specific
 .DS_Store
-.vscode/
-.idea/
+Thumbs.db
 
 # Python
 __pycache__/
 *.pyc
-.venv/
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv
 env/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Data files (large / raw data should not be committed!)
+data/raw/
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.parquet
+*.h5
+*.pkl
+
+# Logs
 *.log
 
-# Jupyter
-.ipynb_checkpoints/
+# IDEs / Editors
+.vscode/
+.idea/
 
-# SageMaker Local artifacts (large)
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Mac-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Outputs (generated files, models, etc.)
 outputs/
-sagemaker-local/
-*.tar.gz
-*.joblib
-
-# Secrets (never commit!)
-.env
+models/
